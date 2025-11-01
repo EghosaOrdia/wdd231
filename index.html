@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD231 Home Page</title>
+    <meta name="author" content="Eghosa Ordia" />
+    <meta name="description" content="WDD231 Home page" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script defer src="scripts/create-course-cards.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/last-modified.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">Site Name</div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav id="nav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">Chamber Project</a>
+        <a href="#" class="nav-link">Final Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Home</h1>
+      </section>
+
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              quo consequatur assumenda aliquam vel nulla aperiam in enim
+              eveniet similique, placeat quam voluptatibus facere cumque
+              sapiente laboriosam molestiae, nam id reiciendis repudiandae
+              nesciunt rerum eius? Amet, nisi saepe quod consequatur nesciunt
+              fugit enim commodi. Dicta ducimus consectetur cumque libero enim.
+            </p>
+          </div>
+          <div class="about-photo">
+            <h2>Student Photo</h2>
+            <figure>
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQFcr09nFQqDvA/profile-displayphoto-scale_200_200/B4DZkHn61vG8AY-/0/1756769529854?e=1763596800&v=beta&t=f1TsT3AVxJmIBKpy91RNpXNmXPpZZm7EYb4Bp-KZ7No"
+                width="200"
+                height="200"
+                alt="Eghosa Ordia, wearing a white sleeve and dark blue tie outdoors"
+              />
+              <caption>
+                Eghosa Ordia, wearing a white sleeve and dark blue tie outdoors
+              </caption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Section -->
+      <section class="courses-section">
+        <h2>Web Certification Courses</h2>
+        <!-- Course Tabs -->
+        <div class="course-tabs">
+          <button class="tab-btn active" data-filter="ALL">ALL</button>
+          <button class="tab-btn" data-filter="CSE">CSE</button>
+          <button class="tab-btn" data-filter="WDD">WDD</button>
+        </div>
+
+        <!-- Course List -->
+        <div class="course-list"></div>
+        <div class="course-total">
+          The total credits for courses listed above is
+          <span id="creditsTotal" class="credits-total"></span>
+        </div>
+      </section>
+
+      <!-- Social Links -->
+      <section class="social-section">
+        <div class="social-links">
+          <a
+            href="http://linkedin.com/in/ordia"
+            target="_blank"
+            class="social-icon"
+          >
+            <img src="images/linkedin.svg" alt="linkedin logo" />
+          </a>
+          <a
+            href="https://github.com/EghosaOrdia"
+            target="_blank"
+            class="social-icon"
+          >
+            <img src="images/github.svg" alt="github logo" />
+          </a>
+          <a
+            href="https://x.com/ordia_codes"
+            target="_blank"
+            class="social-icon"
+          >
+            <img src="images/x.png" alt="x (formerly twitter) logo" />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Eghosa Ordia • Benin City, Nigeria</p>
+      <p>
+        Last Modification: <span id="lastModified" class="last-modified"></span>
+      </p>
+    </footer>
+  </body>
+</html>

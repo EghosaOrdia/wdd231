@@ -1,0 +1,51 @@
+/* Mobile Styles (320px and up) */
+@media (max-width: 640px) {
+  header {
+    padding: 8px 16px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--card);
+    flex-direction: column;
+    gap: 0;
+
+    border-radius: var(--radius-md);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  nav.active {
+    padding: 10px;
+    max-height: 300px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    border: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
