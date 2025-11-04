@@ -8,7 +8,6 @@
   --bg: #f6f7f9;
   --border: #e6e9ee;
   --primary: #2563eb;
-  --primary: #2563eb;
   --secondary: #f3f4f6;
   --card: #ffffff;
   --foreground: #e6eef9;
@@ -60,9 +59,16 @@ header {
 }
 
 .logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
   font-size: 1.2rem;
   color: var(--text);
   font-weight: 600;
+}
+
+.logo__img {
+  width: 30px;
 }
 
 .menu-toggle {
