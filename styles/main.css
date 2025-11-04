@@ -173,17 +173,20 @@ main {
   font-size: 14px;
   line-height: 1.7;
 }
-figure {
+.about-photo__picture {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+.about-photo__picture img {
+  margin: 0 auto;
+}
+.about-photo__caption {
+  font-size: 0.8rem;
   text-align: center;
   color: #374151;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-figure img {
-  margin: 0 auto;
+  margin-top: 4px;
+  font-weight: var(--weight-bold);
 }
 
 /* Courses section */

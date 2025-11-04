@@ -66,17 +66,27 @@
           </div>
           <div class="about-photo">
             <h2>Student Photo</h2>
-            <figure>
+            <picture class="about-photo__picture">
+              <source
+                srcset="images/me-large.jpg"
+                media="(max-width: 1500px)"
+              />
+              <source
+                srcset="images/me.jpg"
+                media="(max-width: 640px)"
+                alt="Eghosa Ordia, wearing a white sleeve and dark blue tie outdoors"
+              />
               <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQFcr09nFQqDvA/profile-displayphoto-scale_200_200/B4DZkHn61vG8AY-/0/1756769529854?e=1763596800&v=beta&t=f1TsT3AVxJmIBKpy91RNpXNmXPpZZm7EYb4Bp-KZ7No"
+                src="images/me-large.jpg"
                 width="200"
                 height="200"
                 alt="Eghosa Ordia, wearing a white sleeve and dark blue tie outdoors"
+                class="about-photo__img"
               />
-              <figcaption>
-                Eghosa Ordia, wearing a white sleeve and dark blue tie outdoors
-              </figcaption>
-            </figure>
+            </picture>
+            <p class="about-photo__caption">
+              Eghosa Ordia, wearing a white sleeve and dark blue tie outdoors
+            </p>
           </div>
         </div>
       </section>
