@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Innovatech Solutions Ltd.",
+    "description": "Leading provider of cutting-edge software solutions and IT consultancy for businesses across Nigeria.",
+    "url": "https://www.siteexample.com/",
+    "address": "djbdv",
+    "phoneNumber": 837656373,
+    "icon": "innovatech.webp",
+    "membershipLevel": 1,
+    "email": "support@innovatech.com",
+    "category": "technology"
+  },
+  {
+    "name": "GreanLeaf Farms",
+    "description": "Sustainable and organic farming, supplying fresh produce to local metropolitan area and beyond.",
+    "url": "https://www.greanleaf.com/",
+    "address": "djbdv",
+    "phoneNumber": 819363545,
+    "icon": "greanleaf.webp",
+    "membershipLevel": 1,
+    "email": "farm@greanleaf.com",
+    "category": "farming"
+  },
+  {
+    "name": "Capital Properties",
+    "description": "Your trusted partner in residential and commercial real estate development and management in the FCT",
+    "url": "https://www.cproperties.com/",
+    "address": "djbdv",
+    "phoneNumber": 819363545,
+    "icon": "capital-properties.webp",
+    "membershipLevel": 2,
+    "email": "estate@capitalproperties.com",
+    "category": "real estate"
+  },
+  {
+    "name": "Abuja Emporium",
+    "description": "A one-stop destination for luxury goods, fashion and lifestyle products in the heart of the city.",
+    "url": "https://www.abuja-emporium.com/",
+    "address": "djbdv",
+    "phoneNumber": 91456393,
+    "icon": "abuja-emporium.webp",
+    "membershipLevel": 1,
+    "email": "luxury@abujaemporium.com",
+    "category": "retail"
+  },
+  {
+    "name": "Pinnacle Builders",
+    "description": "Delivering high-quality construction with a commitment to excellence and safety standards.",
+    "url": "https://www.pinnacle.com/",
+    "address": "djbdv",
+    "phoneNumber": 71456373,
+    "icon": "pinnacle-builders.webp",
+    "membershipLevel": 3,
+    "email": "construction@pinnaclebuilders.com",
+    "category": "construction"
+  },
+  {
+    "name": "Ambassador Hotel",
+    "description": "Experience world-class luxury and unparalleled service at Abuja's five-star hotel.",
+    "url": "https://www.ambassadorhotel.com/",
+    "address": "djbdv",
+    "phoneNumber": 71756390,
+    "icon": "ambassador-hotel.webp",
+    "membershipLevel": 1,
+    "email": "hotel@ambassadorhotel.com",
+    "category": "hospitality"
+  },
+  {
+    "name": "Nova Energy Services",
+    "description": "Providing reliable renewable energy solutions and solar installations for homes and businesses across Nigeria.",
+    "url": "https://www.novaenergy.com/",
+    "address": "djbdv",
+    "phoneNumber": 812456789,
+    "icon": "nova-energy.webp",
+    "membershipLevel": 2,
+    "email": "info@novaenergy.com",
+    "category": "energy"
+  },
+  {
+    "name": "RoyalTaste Catering",
+    "description": "Premier catering company offering exquisite meals and event planning services for corporate and private occasions.",
+    "url": "https://www.royaltaste.com/",
+    "address": "djbdv",
+    "phoneNumber": 803987654,
+    "icon": "royaltaste.webp",
+    "membershipLevel": 1,
+    "email": "orders@royaltaste.com",
+    "category": "catering"
+  },
+  {
+    "name": "Zenith Microfinance Bank",
+    "description": "Empowering small and medium enterprises with accessible loans, savings, and digital banking solutions.",
+    "url": "https://www.zenithmicrobank.com/",
+    "address": "djbdv",
+    "phoneNumber": 901234567,
+    "icon": "zenith-microbank.webp",
+    "membershipLevel": 3,
+    "email": "support@zenithmicrobank.com",
+    "category": "finance"
+  },
+  {
+    "name": "SkyNet Logistics",
+    "description": "Efficient and secure delivery solutions for e-commerce and corporate clients nationwide.",
+    "url": "https://www.skynetlogistics.com/",
+    "address": "djbdv",
+    "phoneNumber": 817234556,
+    "icon": "skynet-logistics.webp",
+    "membershipLevel": 2,
+    "email": "contact@skynetlogistics.com",
+    "category": "logistics"
+  },
+  {
+    "name": "Elite Healthcare Clinic",
+    "description": "Modern medical facility providing comprehensive healthcare services with top-tier professionals.",
+    "url": "https://www.elitehealthcare.com/",
+    "address": "djbdv",
+    "phoneNumber": 805678432,
+    "icon": "elite-healthcare.webp",
+    "membershipLevel": 3,
+    "email": "care@elitehealthcare.com",
+    "category": "healthcare"
+  }
+]

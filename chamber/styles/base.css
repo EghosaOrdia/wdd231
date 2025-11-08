@@ -1,0 +1,59 @@
+/*  ========================
+    Base Stylesheet
+    ========================
+    Defining base styles and css variables
+*/
+
+:root {
+  --font-primary: "Public Sans", sans-serif;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --color-primary: #004b23;
+  --accent: #d4af37;
+  --background-light: #f8f9fa;
+  --subtle-bg-light: #f8f9faa4;
+  --background-dark: #101922;
+  --text-light: #1c1c1c;
+  --text-dark: #f8f9fa;
+  --subtle-light: #e9ecef;
+  --subtle-dark: #2a3b4a;
+  --subtle-text-light: #6c757d;
+  --subtle-text-dark: #a0aec0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.dark-bg {
+  background-color: var(--background-dark);
+}
+
+.light-bg {
+  background-color: var(--background-light);
+}
+
+body {
+  position: relative;
+  font-family: var(--font-primary);
+  background-color: var(--background-light);
+}
+
+.hidden {
+  display: none;
+}
