@@ -32,6 +32,7 @@ const createBusinessCard = (business) => {
   businessLogo.classList.add("result__img");
   businessLogo.setAttribute("alt", "business image");
   businessLogo.setAttribute("src", `images/${business.icon}`);
+  businessLogo.setAttribute("loading", "lazy");
 
   const businessCategory = document.createElement("span");
   businessCategory.classList.add("result__category");
