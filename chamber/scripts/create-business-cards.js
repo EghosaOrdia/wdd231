@@ -2,9 +2,8 @@ const resultsContainer = document.querySelector(".results");
 
 const fetchData = async () => {
   try {
-    const response = await fetch("data/member.json");
+    const response = await fetch("data/members.json");
     const data = await response.json();
-    // console.log(data);
     return data;
   } catch (error) {
     console.log(`Uh oh. An error has occured: ${error}`);
