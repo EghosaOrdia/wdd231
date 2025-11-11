@@ -96,57 +96,17 @@ const createBusinessCard = (business) => {
 
 let businesses;
 
-const main = async () => {
+const main = async (count = "all") => {
   businesses = await fetchData();
-  //   console.log(businesses);
-  businesses.forEach((business) => {
-    createBusinessCard(business);
-  });
+  if (count === "all") {
+    businesses.forEach((business) => {
+      createBusinessCard(business);
+    });
+  } else {
+    for (let i = 0; i < Number(count); i++) {
+      createBusinessCard(businesses[i]);
+    }
+  }
 };
 
-main();
-
-{
-  /* <div class="result__card">
-  <div class="result__header">
-    <img src="images/logo.png" alt="business image" class="result__img" />
-    <div class="result__meta">
-      <span class="result__category">TECHNOLOGY</span>
-      <h3 class="result__title">Innovatech Solutions Ltd.</h3>
-    </div>
-  </div>
-  <div class="result__description">
-    Leading provider of cutting-edge software solutions and IT services
-  </div>
-  <div class="result__footer">
-    <div class="result__links">
-      <a href="#" class="result__link">
-        <img
-          src="images/email.svg"
-          alt="email icon"
-          class="result__link__img"
-        />
-      </a>
-      <a href="#" class="result__link">
-        <img
-          src="images/internet.svg"
-          alt="website icon"
-          class="result__link__img"
-        />
-      </a>
-      <a href="#" class="result__link">
-        <img
-          src="images/phone.svg"
-          alt="phone icon"
-          class="result__link__img"
-        />
-      </a>
-    </div>
-    <div class="result__meta">
-      <button id="resultBtn" class="result__btn">
-        View Details
-      </button>
-    </div>
-  </div>
-</div>; */
-}
+export default main;

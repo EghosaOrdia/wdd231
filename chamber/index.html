@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Abuja Chamber of Commerce Home Page</title>
+      <meta name="author" content="Eghosa Ordia" />
+      <meta
+        name="description"
+        content="The Abuja Chamber of Commerce connects local businesses, entrepreneurs, and investors through advocacy, networking, and business support services."
+      />
+      <meta
+        name="keywords"
+        content="Abuja Chamber of Commerce, Abuja business network, Abuja entrepreneurs, trade and investment Abuja, business support Nigeria, Abuja business directory, local business growth, Abuja economy, business events Abuja, networking Abuja"
+      />
+      <meta name="og:title" content="Abuja Chamber of Commerce Home Page" />
+      <meta
+        property="og:description"
+        content="Empowering businesses across Abuja through advocacy, trade, and innovation."
+      />
+      <meta
+        property="og:image"
+        content="http://127.0.0.1:5500/chamber/images/logo.jpg"
+      />
+      <meta
+        property="og:url"
+        content="http://127.0.0.1:5500/chamber/index.html"
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_NG" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles/normalize.css" />
+      <link rel="stylesheet" href="styles/main.css" />
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <script defer src="scripts/main.js"></script>
+      <script defer type="module" src="scripts/create-business-cards.mjs"></script>
+      <script defer type="module" src="scripts/index.js"></script>
+      <script defer src="scripts/get-weather-data.js"></script>
+    </head>
+    <body>
+      <header class="header">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="abuja chamber of commerce logo"
+            class="logo__img"
+          />
+          <h2>Abuja Chamber of Commerce</h2>
+        </div>
+        <nav id="nav" class="nav">
+          <a href="index.html" class="nav__link active">Home</a>
+          <a href="directory.html" class="nav__link">Directory</a>
+          <a href="#" class="nav__link">Events</a>
+          <a href="#" class="nav__link">Membership</a>
+          <a href="#" class="nav__link">About us</a>
+          <a href="#" class="nav__link nav__link--highlight">Contact</a>
+        </nav>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__overlay"></div>
+          <div class="hero__text">
+            <h1 class="hero__h1">
+              Connecting & Empowering Businesses In Abuja.
+            </h1>
+            <p class="hero__p">
+              Fostering economic growth and prosperity for our community through
+              advocacy, networking and support.
+            </p>
+            <div class="hero__actions">
+              <a href="#" class="button hero__cta hero__cta--primary"
+                >Explore Membership Benefits</a
+              >
+              <a href="#events" class="button hero__cta"
+                >View Upcoming Events</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="events" class="section section-events">
+          <h2 class="section__h2">Upcoming Events</h2>
+          <div class="events">
+            <div class="event">
+              <div class="event__date">
+                <span class="event__month">NOV</span>
+                <span class="event__day">15</span>
+                <span class="event__year">2025</span>
+              </div>
+              <div class="event__details">
+                <h3 class="event__title">
+                  Annual Business Gala & Awards Night
+                </h3>
+                <p class="event__description">Wuse, Abuja</p>
+              </div>
+              <div>
+                <a href="#" class="button button--primary event__cta"
+                  >Register Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="weather" class="section section-weather">
+          <h2 class="section__h2">Current Weather In Abuja</h2>
+          <div class="weather">
+            <div class="weather__card">
+              <div class="weather__date__temp">
+                <div class="weather__date__meta">
+                  <span class="weather__day">Monday</span>
+                  <span class="weather__date">24 Dec, 2025</span>
+                </div>
+
+                <div class="weather__temp">
+                  <span id="tempDeg" class="weather__temp__details">26°C</span>
+                  <div class="weather__high__low">
+                    High: <span id="weatherHigh">27</span> Low:
+                    <span id="weatherLow">10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather__desc">
+                <img
+                  src=""
+                  alt="weather image representation"
+                  id="weatherImg"
+                  class="weather__img"
+                />
+                <div class="weather__desciption">
+                  <span id="weatherCondition" class="weather__condition"
+                    >Cloudy</span
+                  >
+                  <span id="weatherFeels" class="weather__feelslike"
+                    >Feels like 26</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="weather__card">
+              <div class="weather__date__temp">
+                <div class="weather__date__meta">
+                  <span class="weather__day">Monday</span>
+                  <span class="weather__date">24 Dec, 2025</span>
+                </div>
+
+                <div class="weather__temp">
+                  <span id="tempDeg" class="weather__temp__details">26°C</span>
+                  <div class="weather__high__low">
+                    High: <span id="weatherHigh">27</span> Low:
+                    <span id="weatherLow">10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather__desc">
+                <img
+                  src=""
+                  alt="weather image representation"
+                  id="weatherImg"
+                  class="weather__img"
+                />
+                <div class="weather__desciption">
+                  <span id="weatherCondition" class="weather__condition"
+                    >Cloudy</span
+                  >
+                  <span id="weatherFeels" class="weather__feelslike"
+                    >Feels like 26</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="weather__card">
+              <div class="weather__date__temp">
+                <div class="weather__date__meta">
+                  <span class="weather__day">Monday</span>
+                  <span class="weather__date">24 Dec, 2025</span>
+                </div>
+
+                <div class="weather__temp">
+                  <span id="tempDeg" class="weather__temp__details">26°C</span>
+                  <div class="weather__high__low">
+                    High: <span id="weatherHigh">27</span> Low:
+                    <span id="weatherLow">10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather__desc">
+                <img
+                  src=""
+                  alt="weather image representation"
+                  id="weatherImg"
+                  class="weather__img"
+                />
+                <div class="weather__desciption">
+                  <span id="weatherCondition" class="weather__condition"
+                    >Cloudy</span
+                  >
+                  <span id="weatherFeels" class="weather__feelslike"
+                    >Feels like 26</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="weather__card">
+              <div class="weather__date__temp">
+                <div class="weather__date__meta">
+                  <span class="weather__day">Monday</span>
+                  <span class="weather__date">24 Dec, 2025</span>
+                </div>
+
+                <div class="weather__temp">
+                  <span id="tempDeg" class="weather__temp__details">26°C</span>
+                  <div class="weather__high__low">
+                    High: <span id="weatherHigh">27</span> Low:
+                    <span id="weatherLow">10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather__desc">
+                <img
+                  src=""
+                  alt="weather image representation"
+                  id="weatherImg"
+                  class="weather__img"
+                />
+                <div class="weather__desciption">
+                  <span id="weatherCondition" class="weather__condition"
+                    >Cloudy</span
+                  >
+                  <span id="weatherFeels" class="weather__feelslike"
+                    >Feels like 26</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="weather__card">
+              <div class="weather__date__temp">
+                <div class="weather__date__meta">
+                  <span class="weather__day">Monday</span>
+                  <span class="weather__date">24 Dec, 2025</span>
+                </div>
+
+                <div class="weather__temp">
+                  <span id="tempDeg" class="weather__temp__details">26°C</span>
+                  <div class="weather__high__low">
+                    High: <span id="weatherHigh">27</span> Low:
+                    <span id="weatherLow">10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather__desc">
+                <img
+                  src=""
+                  alt="weather image representation"
+                  id="weatherImg"
+                  class="weather__img"
+                />
+                <div class="weather__desciption">
+                  <span id="weatherCondition" class="weather__condition"
+                    >Cloudy</span
+                  >
+                  <span id="weatherFeels" class="weather__feelslike"
+                    >Feels like 26</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="weather__card">
+              <div class="weather__date__temp">
+                <div class="weather__date__meta">
+                  <span class="weather__day">Monday</span>
+                  <span class="weather__date">24 Dec, 2025</span>
+                </div>
+
+                <div class="weather__temp">
+                  <span id="tempDeg" class="weather__temp__details">26°C</span>
+                  <div class="weather__high__low">
+                    High: <span id="weatherHigh">27</span> Low:
+                    <span id="weatherLow">10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="weather__desc">
+                <img
+                  src=""
+                  alt="weather image representation"
+                  id="weatherImg"
+                  class="weather__img"
+                />
+                <div class="weather__desciption">
+                  <span id="weatherCondition" class="weather__condition"
+                    >Cloudy</span
+                  >
+                  <span id="weatherFeels" class="weather__feelslike"
+                    >Feels like 26</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="spotlight" class="section section-spotlight">
+          <h2 class="section__h2">Business Directory</h2>
+          <div class="results"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="info-and-links">
+          <p class="footer__copyright">
+            © <span id="currentYear"></span> Abuja Chamber of Commerce. All
+            Rights Reserved.
+          </p>
+          <nav class="footer__links">
+            <a href="#" class="nav__link nav_link--footer">Home</a>
+            <a href="#" class="nav__link nav_link--footer">Directory</a>
+          </nav>
+        </div>
+        <div class="last-modified">
+          Last Modification:
+          <span id="lastModified" class="last-modified"></span>
+        </div>
+      </footer>
+    </body>
+  </html>
+</html>

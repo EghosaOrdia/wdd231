@@ -38,14 +38,21 @@ a {
   text-decoration: none;
 }
 
-
-
 .dark-bg {
   background-color: var(--background-dark);
 }
 
 .light-bg {
   background-color: var(--background-light);
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.section {
+  padding: 4rem 6rem;
 }
 
 body {
