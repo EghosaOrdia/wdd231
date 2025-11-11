@@ -42,12 +42,25 @@
 
   main {
     margin-top: 8rem;
-    /* padding: 0 6rem; */
+  }
+
+  .section {
+    padding: 4rem 6rem;
+  }
+
+  .section__h2 {
+    font-size: 2.5rem;
   }
 
   .hero__h1 {
     font-size: 2.5rem;
     line-height: 1;
+  }
+  .hero__p {
+    font-size: 1.2rem;
+  }
+  .hero__text {
+    padding: 2rem 6rem;
   }
 
   .section__h1 {
@@ -73,5 +86,22 @@
   .info-and-links {
     flex-direction: row;
     align-items: center;
+  }
+
+  /* Events */
+  .event {
+    width: 60%;
+    flex-direction: row;
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+
+  /* Weather */
+  .weather {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .weather__card {
+    flex-direction: row;
   }
 }

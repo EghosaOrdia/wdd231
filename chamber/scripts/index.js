@@ -1,3 +1,3 @@
-import main from "./create-business-cards.mjs";
+import { createRandomPremium } from "./create-business-cards.mjs";
 
-main(4);
+createRandomPremium(4);

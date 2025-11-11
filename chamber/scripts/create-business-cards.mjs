@@ -38,7 +38,17 @@ const createBusinessCard = (business) => {
   businessCategory.textContent = business.category.toUpperCase();
   const businessTitle = document.createElement("h3");
   businessTitle.classList.add("result__title");
-  businessTitle.textContent = business.name;
+
+  let category;
+  if (business.membershipLevel == 1) {
+    category = "Bronze";
+  } else if (business.membershipLevel == 2) {
+    category = "Silver";
+  } else if (business.membershipLevel == 3) {
+    category = "Gold";
+  }
+
+  businessTitle.textContent = `${business.name} - ${category}`;
 
   const emailLink = document.createElement("a");
   emailLink.setAttribute("href", "#");
@@ -96,6 +106,22 @@ const createBusinessCard = (business) => {
 
 let businesses;
 
+const createAllCards = async () => {
+  businesses = await fetchData();
+};
+
+const createRandomPremium = async (count) => {
+  businesses = await fetchData();
+  const premiumBusinesses = businesses.filter(
+    (business) => business.membershipLevel > 1
+  );
+
+  const shuffled = [...premiumBusinesses].sort(() => Math.random() - 0.5);
+  const randomBusinesses = shuffled.slice(0, count);
+
+  randomBusinesses.forEach((business) => createBusinessCard(business));
+};
+
 const main = async (count = "all") => {
   businesses = await fetchData();
   if (count === "all") {
@@ -109,4 +135,5 @@ const main = async (count = "all") => {
   }
 };
 
+export { createAllCards, createRandomPremium };
 export default main;
