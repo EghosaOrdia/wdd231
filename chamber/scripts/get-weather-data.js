@@ -4,9 +4,9 @@ const latitude = 9.056466505452864;
 
 const longitude = 7.496044961023618;
 
-// const ENDPOINT = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric&`;
+const ENDPOINT = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric&`;
 
-const ENDPOINT = "http://127.0.0.1:5500/chamber/data/weather.json";
+// const ENDPOINT = "http://127.0.0.1:5500/chamber/data/weather.json";
 // const ENDPOINT = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&`;
 
 const formatDateString = function (date) {
