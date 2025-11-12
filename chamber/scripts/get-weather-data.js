@@ -46,12 +46,12 @@ const populateWeatherCards = (weatherData) => {
 
     const dayEl = card.querySelector(".weather__day");
     const dateEl = card.querySelector(".weather__date");
-    const tempEl = card.querySelector("#tempDeg");
-    const maxTempEl = card.querySelector("#weatherHigh");
-    const minTempEl = card.querySelector("#weatherLow");
-    const conditionEl = card.querySelector("#weatherCondition");
-    const conditionImg = card.querySelector("#weatherImg");
-    const feelEl = card.querySelector("#weatherFeels");
+    const tempEl = card.querySelector(".tempDeg");
+    const maxTempEl = card.querySelector(".weatherHigh");
+    const minTempEl = card.querySelector(".weatherLow");
+    const conditionEl = card.querySelector(".weatherCondition");
+    const conditionImg = card.querySelector(".weatherImg");
+    const feelEl = card.querySelector(".weatherFeels");
 
     const date = new Date(item.dt_txt);
     const day = date.toLocaleDateString("en-US", { weekday: "long" });
