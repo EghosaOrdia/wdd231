@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abuja Chamber of Commerce Home Page</title>
+    <meta name="author" content="Eghosa Ordia" />
+    <meta
+      name="description"
+      content="The Abuja Chamber of Commerce connects local businesses, entrepreneurs, and investors through advocacy, networking, and business support services."
+    />
+    <meta
+      name="keywords"
+      content="Abuja Chamber of Commerce, Abuja business network, Abuja entrepreneurs, trade and investment Abuja, business support Nigeria, Abuja business directory, local business growth, Abuja economy, business events Abuja, networking Abuja"
+    />
+    <meta property="og:title" content="Abuja Chamber of Commerce Home Page" />
+    <meta
+      property="og:description"
+      content="Empowering businesses across Abuja through advocacy, trade, and innovation."
+    />
+    <meta property="og:image" content="ttp://127.0.0.1:5500/chamber/logo.png" />
+    <meta
+      property="og:url"
+      content="http://127.0.0.1:5500/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="images/logo.png"
+          alt="abuja chamber of commerce logo"
+          class="logo__img"
+        />
+        <h2>Abuja Chamber of Commerce</h2>
+      </div>
+      <nav id="nav" class="nav">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="directory.html" class="nav__link">Directory</a>
+        <a href="#" class="nav__link">Events</a>
+        <a href="#" class="nav__link">Membership</a>
+        <a href="#" class="nav__link">About us</a>
+        <a href="#" class="nav__link nav__link--highlight">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section section-join">
+        <div class="section__header">
+          <h1 class="section__h1">Join a Thriving Business Community</h1>
+          <p class="section__header__text">
+            Become a member and unlock exclusive benefits, network with industry
+            leaders and contribute to the growth of commerce in Abuja.
+          </p>
+        </div>
+
+        <div class="section__body">
+          <form action="thankyou.html" method="get" class="form-join">
+            <h2 class="join__heading">Membership Application Form</h2>
+            <div class="join__body">
+              <div class="form-control--alt">
+                <div class="form-control__meta">
+                  <label for="fullname" class="form__label"
+                    >Applicant's Full Name</label
+                  >
+                  <input
+                    name="fullname"
+                    type="text"
+                    placeholder="Enter your full name"
+                    id="fullname"
+                    class="form__input fname"
+                    required
+                  />
+                </div>
+                <div class="form-control__meta">
+                  <label for="organization" class="form__label"
+                    >Organizational Title</label
+                  >
+                  <input
+                    name="organization"
+                    type="text"
+                    placeholder="e.g. Chief Executive Officer"
+                    id="organization"
+                    class="form__input fname"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-control--alt">
+                <div class="form-control__meta">
+                  <label for="email" class="form__label">Email Address</label>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="example@domain.com"
+                    id="email"
+                    class="form__input email"
+                    required
+                  />
+                </div>
+                <div class="form-control__meta">
+                  <label for="fullname" class="form__label"
+                    >Mobile Phone Number</label
+                  >
+                  <input
+                    name="fullname"
+                    type="number"
+                    placeholder="Enter your phone number"
+                    id="fullname"
+                    class="form__input number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="businessname" class="form__label"
+                  >Enter Official Business Name</label
+                >
+                <input
+                  name="businessname"
+                  type="text"
+                  placeholder="Enter your business name"
+                  id="businessname"
+                  class="form__input"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="mlevel" class="form__label">Membership Level</label>
+                <select name="mlevel" id="mlevel" class="form__input">
+                  <option value="--" disabled></option>
+                  <option value="A">A</option>
+                </select>
+              </div>
+              <div class="form-control">
+                <label for="description" class="form__label"
+                  >Business Description</label
+                >
+                <textarea
+                  name="description"
+                  id="description"
+                  class="form__input desc"
+                ></textarea>
+              </div>
+              <div class="form-control">
+                <button class="button form__button">Submit Application</button>
+              </div>
+            </div>
+          </form>
+
+          <aside class="">
+            <h2>Explore Our Membership Tiers</h2>
+            <div class="membershiptiers">
+              <div class="tier">
+                <div class="tier__heading">
+                  <h3 class="tier__header">NP</h3>
+                  <img
+                    src=""
+                    alt="icon of NP membership level"
+                    class="tier__img"
+                  />
+                </div>
+                <div class="tier__body">
+                  Essential for non-profits and public sector entities
+                </div>
+                <div class="tier__footer">
+                  <a href="#" class="tier__button">Learn more...</a>
+                </div>
+              </div>
+              <div class="tier">
+                <div class="tier__heading">
+                  <h3 class="tier__header">Bronze</h3>
+                  <img
+                    src=""
+                    alt="icon of bronze membership level"
+                    class="tier__img"
+                  />
+                </div>
+                <div class="tier__body">
+                  Core benefits for small businesses and startups
+                </div>
+                <div class="tier__footer">
+                  <a href="#" class="tier__button">Learn more...</a>
+                </div>
+              </div>
+              <div class="tier">
+                <div class="tier__heading">
+                  <h3 class="tier__header">Silver</h3>
+                  <img
+                    src=""
+                    alt="icon of silver membership level"
+                    class="tier__img"
+                  />
+                </div>
+                <div class="tier__body">
+                  Enhanced visibility and networking for growing businesses.
+                </div>
+                <div class="tier__footer">
+                  <a href="#" class="tier__button">Learn more...</a>
+                </div>
+              </div>
+              <div class="tier">
+                <div class="tier__heading">
+                  <h3 class="tier__header">Gold</h3>
+                  <img
+                    src=""
+                    alt="icon of gold membership level"
+                    class="tier__img"
+                  />
+                </div>
+                <div class="tier__body">
+                  Premium access and exclusive opportunities for industry
+                  leaders.
+                </div>
+                <div class="tier__footer">
+                  <a href="#" class="tier__button">Learn more...</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="info-and-links">
+        <p class="footer__copyright">
+          © <span id="currentYear"></span> Abuja Chamber of Commerce. All Rights
+          Reserved.
+        </p>
+        <nav class="footer__links">
+          <a href="#" class="nav__link nav_link--footer">Home</a>
+          <a href="#" class="nav__link nav_link--footer">Directory</a>
+        </nav>
+      </div>
+      <div class="last-modified">
+        Last Modification:
+        <span id="lastModified" class="last-modified"></span>
+      </div>
+    </footer>
+  </body>
+</html>
