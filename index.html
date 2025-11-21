@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/dialog.css" />
     <script defer src="scripts/create-course-cards.js"></script>
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/last-modified.js"></script>
@@ -34,6 +35,11 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <dialog id="modal">
+      <h2>Modal Dialog</h2>
+      <p>This is a modal dialog</p>
+      <button class="button close-modal">Close modal</button>
+    </dialog>
     <header>
       <div class="header-container">
         <div class="logo">
@@ -59,7 +65,7 @@
     </header>
 
     <section class="hero">
-      <h1>Home</h1>
+      <h1 class="open-modal">Home</h1>
     </section>
     <main>
       <section class="about-section">
