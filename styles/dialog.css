@@ -14,6 +14,7 @@ h2 {
 #newsletter {
   padding: 1em;
   max-width: 40ch;
+  margin: auto;
   border: 0;
   box-shadow: 0 0 1em rgb(0 0 0 / 30%);
 
@@ -58,7 +59,7 @@ h2 {
   /* Hover and focus states for buttons */
   &:hover,
   &:focus {
-    background: purple;
+    background-color: purple;
   }
 }
 

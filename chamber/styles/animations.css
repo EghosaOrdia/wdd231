@@ -1,0 +1,43 @@
+/* Keyframes */
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Reusable class */
+.zoom-fade-in {
+  animation: zoomFadeIn 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  will-change: transform, opacity;
+}
+
+/* Optional variants */
+.zoom-fade-in-slow {
+  animation: zoomFadeIn 0.8s ease forwards;
+}
+
+.zoom-fade-in-fast {
+  animation: zoomFadeIn 0.25s ease-out forwards;
+}
+
+.zoom-fade-in-large {
+  animation: zoomFadeIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  transform: scale(0.7); /* stronger zoom start */
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .zoom-fade-in,
+  .zoom-fade-in-slow,
+  .zoom-fade-in-fast,
+  .zoom-fade-in-large {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

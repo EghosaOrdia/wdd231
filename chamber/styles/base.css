@@ -46,6 +46,11 @@ a {
   background-color: var(--background-light);
 }
 
+.button {
+  border: none;
+  background-color: transparent;
+}
+
 .button--primary {
   background-color: var(--color-primary);
   color: #fff;

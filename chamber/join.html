@@ -1,53 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abuja Chamber of Commerce Home Page</title>
-    <meta name="author" content="Eghosa Ordia" >
+    <meta name="author" content="Eghosa Ordia">
     <meta
       name="description"
       content="The Abuja Chamber of Commerce connects local businesses, entrepreneurs, and investors through advocacy, networking, and business support services.">
     <meta
       name="keywords"
       content="Abuja Chamber of Commerce, Abuja business network, Abuja entrepreneurs, trade and investment Abuja, business support Nigeria, Abuja business directory, local business growth, Abuja economy, business events Abuja, networking Abuja">
-    <meta property="og:title" content="Abuja Chamber of Commerce Home Page" >
+    <meta property="og:title" content="Abuja Chamber of Commerce Home Page">
     <meta
       property="og:description"
       content="Empowering businesses across Abuja through advocacy, trade, and innovation.">
-    <meta property="og:image" content="ttp://127.0.0.1:5500/chamber/logo.png" >
+    <meta property="og:image" content="ttp://127.0.0.1:5500/chamber/logo.png">
     <meta
       property="og:url"
       content="http://127.0.0.1:5500/chamber/index.html">
-    <meta property="og:type" content="website" >
-    <meta property="og:locale" content="en_NG" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_NG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css" >
-    <link rel="stylesheet" href="styles/main.css" >
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/get-current-timestamp.js"></script>
+    <script defer src="scripts/dialog.js"></script>
   </head>
   <body>
+    <dialog class="modal" id="modal">
+      <div class="modal__heading">
+        <h2 id="tierLevel">NP</h2>
+        <button id="closeModal" class="button modal__button">
+          <img
+            src="images/close.svg"
+            alt="modal close icon"
+            class="modal__img"
+         >
+        </button>
+      </div>
+      <div class="modal__body active" data-modal="np">
+        <div>
+          <h3>Description</h3>
+          <p>Essential for non-profits and public sector entities</p>
+        </div>
+        <div>
+          <h3>Cost</h3>
+          <p>$0.00</p>
+        </div>
+        <div>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Access to Special events</li>
+            <li>Access to discount advertisement</li>
+            <li>Spotlight positions on home page advertisement</li>
+            <li>Free Training</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__body" data-modal="bronze">
+        <div>
+          <h3>Description</h3>
+          <p>Core benefits for small businesses and startups</p>
+        </div>
+        <div>
+          <h3>Cost</h3>
+          <p>$15.75</p>
+        </div>
+        <div>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Access to member-only newsletters</li>
+            <li>Basic listing in the business directory</li>
+            <li>Invitation to quarterly networking events</li>
+            <li>Member-exclusive discounts from partner businesses</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__body" data-modal="silver">
+        <div>
+          <h3>Description</h3>
+          <p>Enhanced visibility and networking for growing businesses.</p>
+        </div>
+        <div>
+          <h3>Cost</h3>
+          <p>$30.75</p>
+        </div>
+        <div>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Everything in Bronze</li>
+            <li>Priority placement in the business directory</li>
+            <li>Access to monthly workshops & business clinics</li>
+            <li>Sponsored social media shout-outs (2× per quarter)</li>
+            <li>Discounted booth rates for Chamber events</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__body" data-modal="gold">
+        <div>
+          <h3>Description</h3>
+          <p>
+            Premium access and exclusive opportunities for industry leaders.
+          </p>
+        </div>
+        <div>
+          <h3>Cost</h3>
+          <p>$55.95</p>
+        </div>
+        <div>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Everything in Silver</li>
+            <li>Premium directory placement with logo & description</li>
+            <li>Featured spotlight in Chamber newsletters</li>
+            <li>Free booth at one major event per year</li>
+            <li>One-on-one business consultation sessions</li>
+            <li>Priority access to sponsorship opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </dialog>
+
     <header class="header">
       <div class="logo">
         <img
           src="images/logo.png"
           alt="abuja chamber of commerce logo"
           class="logo__img"
-        >
+       >
         <h2>Abuja Chamber of Commerce</h2>
       </div>
       <nav id="nav" class="nav">
-        <a href="index.html" class="nav__link active">Home</a>
+        <a href="index.html" class="nav__link">Home</a>
         <a href="directory.html" class="nav__link">Directory</a>
         <a href="#" class="nav__link">Events</a>
-        <a href="#" class="nav__link">Membership</a>
+        <a href="#" class="nav__link active">Membership</a>
         <a href="#" class="nav__link">About us</a>
         <a href="#" class="nav__link nav__link--highlight">Contact</a>
       </nav>
@@ -74,32 +170,52 @@
             <div class="join__body">
               <div class="form-control--alt">
                 <div class="form-control__meta">
-                  <label for="fullname" class="form__label"
-                    >Applicant's Full Name</label
-                  >
+                  <label for="fname" class="form__label">First Name</label>
                   <input
-                    name="fullname"
+                    name="fname"
                     type="text"
                     placeholder="Enter your full name"
-                    id="fullname"
+                    id="fname"
+                    title="first name"
                     autocomplete="name"
                     class="form__input fname"
                     required
-                  >
+                 >
                 </div>
+                <div class="form-control__meta">
+                  <label for="lname" class="form__label">Last Name</label>
+                  <input
+                    name="lname"
+                    type="text"
+                    placeholder="Enter your last name"
+                    id="lname"
+                    title="last name"
+                    autocomplete="name"
+                    class="form__input fname"
+                    required
+                 >
+                </div>
+              </div>
+              <div class="form-control">
                 <div class="form-control__meta">
                   <label for="organization" class="form__label"
                     >Organizational Title</label
+                  >
+                  <small id="org-title-hint"
+                    >Only letters, spaces and hyphens allowed. Minimum 7
+                    characters.</small
                   >
                   <input
                     name="organization"
                     type="text"
                     placeholder="e.g. Chief Executive Officer"
                     id="organization"
-                    autocomplete="organization"
+                    title="organization title"
+                    autocomplete="organization-title"
+                    minlength="7"
+                    pattern="^[A-Za-z\- ]{7,}$"
                     class="form__input fname"
-                    required
-                  >
+                 >
                 </div>
               </div>
               <div class="form-control--alt">
@@ -110,10 +226,11 @@
                     type="email"
                     placeholder="example@domain.com"
                     id="email"
+                    title="email"
                     autocomplete="email"
                     class="form__input email"
                     required
-                  >
+                 >
                 </div>
                 <div class="form-control__meta">
                   <label for="number" class="form__label"
@@ -122,12 +239,13 @@
                   <input
                     name="number"
                     type="number"
-                    autocomplete="tel"
                     placeholder="Enter your phone number"
                     id="number"
+                    title="telephone number"
+                    autocomplete="tel"
                     class="form__input number"
                     required
-                  >
+                 >
                 </div>
               </div>
               <div class="form-control">
@@ -137,12 +255,13 @@
                 <input
                   name="businessname"
                   type="text"
-                  autocomplete="organization"
                   placeholder="Enter your business name"
                   id="businessname"
+                  title="business name"
+                  autocomplete="organization"
                   class="form__input"
                   required
-                >
+               >
               </div>
               <div class="form-control">
                 <label for="mlevel" class="form__label">Membership Level</label>
@@ -161,11 +280,16 @@
                 <textarea
                   name="description"
                   id="description"
+                  title="business description"
                   class="form__input desc"
                 ></textarea>
               </div>
               <div class="form-control">
                 <button class="button form__button">Submit Application</button>
+              </div>
+
+              <div>
+                <input type="hidden" name="timestamp" id="timestamp">
               </div>
             </div>
           </form>
@@ -173,69 +297,77 @@
           <aside>
             <h2>Explore Our Membership Tiers</h2>
             <div class="membershiptiers">
-              <div class="tier">
+              <div class="tier zoom-fade-in-slow">
                 <div class="tier__heading">
                   <h3 class="tier__header">NP</h3>
                   <img
                     src="images/ngo.svg"
                     alt="icon of NP membership level"
                     class="tier__img"
-                  >
+                 >
                 </div>
                 <div class="tier__body">
                   Essential for non-profits and public sector entities
                 </div>
                 <div class="tier__footer">
-                  <a href="#" class="tier__button">Learn more...</a>
+                  <button href="#" class="button tier__button" data-tier="np">
+                    Learn more...
+                  </button>
                 </div>
               </div>
-              <div class="tier">
+              <div class="tier zoom-fade-in-slow">
                 <div class="tier__heading">
                   <h3 class="tier__header">Bronze</h3>
                   <img
                     src="images/bronze.svg"
                     alt="icon of bronze membership level"
                     class="tier__img"
-                  >
+                 >
                 </div>
                 <div class="tier__body">
                   Core benefits for small businesses and startups
                 </div>
                 <div class="tier__footer">
-                  <a href="#" class="tier__button">Learn more...</a>
+                  <button class="button tier__button" data-tier="bronze">
+                    Learn more...
+                  </button>
                 </div>
               </div>
-              <div class="tier">
+              <div class="tier zoom-fade-in-slow">
                 <div class="tier__heading">
                   <h3 class="tier__header">Silver</h3>
                   <img
                     src="images/silver.svg"
                     alt="icon of silver membership level"
                     class="tier__img"
-                  >
+                 >
                 </div>
                 <div class="tier__body">
                   Enhanced visibility and networking for growing businesses.
                 </div>
                 <div class="tier__footer">
-                  <a href="#" class="tier__button">Learn more...</a>
+                  <button class="button tier__button" data-tier="silver">
+                    Learn more...
+                  </button>
                 </div>
               </div>
-              <div class="tier">
+              <div class="tier zoom-fade-in-slow">
                 <div class="tier__heading">
                   <h3 class="tier__header">Gold</h3>
                   <img
                     src="images/gold.svg"
                     alt="icon of gold membership level"
                     class="tier__img"
-                  >
+                 >
                 </div>
                 <div class="tier__body">
                   Premium access and exclusive opportunities for industry
                   leaders.
                 </div>
                 <div class="tier__footer">
-                  <a href="#" class="tier__button">Learn more...</a>
+                  <button href="#" class="button tier__button" data-tier="gold">
+                    Learn more...
+                  </button>
                 </div>
               </div>
             </div>
