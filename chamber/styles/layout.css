@@ -505,6 +505,7 @@ main {
   width: 50px;
   height: 50px;
 }
+
 .result__description {
   color: var(--subtle-text-light);
   padding: 0 1.5rem 1.5rem 1.5rem;
@@ -572,7 +573,7 @@ footer {
 /* Membership Section */
 .section__body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 8rem;
   margin-top: 4.5rem;
 }
@@ -616,8 +617,8 @@ footer {
 
 .form-control--alt {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
   padding: 0 2rem;
 }
 
@@ -659,6 +660,13 @@ footer {
   }
 }
 
+.membershiptiers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
 .tier {
   display: flex;
   flex-direction: column;
@@ -672,4 +680,23 @@ footer {
 .tier__heading {
   display: flex;
   justify-content: space-between;
+}
+
+.tier__img {
+  width: 30px;
+}
+
+.tier__body {
+  color: var(--subtle-text-light);
+}
+
+.tier__button {
+  display: flex;
+  color: var(--color-primary);
+  font-weight: var(--weight-semibold);
+  margin-top: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
