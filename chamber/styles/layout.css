@@ -62,6 +62,10 @@ dialog {
   display: flex;
 }
 
+/*  ====================
+    Header & Navigation 
+    ====================
+*/
 .header {
   position: fixed;
   width: 100%;
@@ -78,19 +82,6 @@ dialog {
   z-index: 1000;
 }
 
-.logo {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  color: var(--color-primary);
-  font-family: var(--font-primary);
-  font-size: 0.7rem;
-}
-
-.logo__img {
-  width: 30px;
-}
-
 .nav {
   display: none;
   position: absolute;
@@ -102,6 +93,29 @@ dialog {
   flex-direction: column;
   gap: 1rem;
   background-color: #fff;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 0.7rem;
+}
+
+.logo__img {
+  width: 30px;
 }
 
 .nav.active {
@@ -126,16 +140,6 @@ dialog {
   color: #fff !important;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-}
-
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  gap: 5px;
 }
 
 .menu-toggle span {
@@ -163,9 +167,7 @@ dialog {
     ====================
 */
 main {
-  margin-top: 3rem;
   overflow: hidden;
-  /* padding: 0 2rem; */
 }
 
 /* Hero */
@@ -710,12 +712,10 @@ footer {
 
   &:focus {
     transform: scale(1.25);
-    /* background-color: var(--color-primary) / 20; */
   }
 
   &:hover {
     transform: scale(0.95);
-    /* background-color: var(--color-primary) / 10; */
   }
 }
 
@@ -777,4 +777,169 @@ footer {
   img {
     width: 400px;
   }
+}
+
+/*  ====================
+    Stats Section 
+    ====================
+*/
+.stats {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.stats__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h2,
+  p {
+    line-height: 1;
+  }
+}
+
+.stats__heading {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.stats__info {
+  font-size: 1.875rem;
+  font-weight: var(--weight-bold);
+}
+
+/*  ====================
+    Discover Page, Section: About Section 
+    ====================
+*/
+.about {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h2,
+  p {
+    line-height: 1.6;
+  }
+
+  p {
+    color: var(--subtle-text-dark-01);
+  }
+}
+
+.about__heading {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.about__display {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Attractions Heading */
+.attractions {
+  padding: 4rem 6rem;
+}
+
+.attractions__heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.attractions__text {
+  text-align: center;
+  line-height: 1;
+}
+
+.attractions__list {
+  display: grid;
+  align-items: start;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card1 {
+  grid-area: "card1";
+}
+.card2 {
+  grid-area: "card2";
+}
+.card3 {
+  grid-area: "card3";
+}
+.card4 {
+  grid-area: "card4";
+}
+.card5 {
+  grid-area: "card5";
+}
+.card6 {
+  grid-area: "card6";
+}
+.card7 {
+  grid-area: "card7";
+}
+.card8 {
+  grid-area: "card8";
+}
+
+.attraction__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.attraction__name {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.attraction__img {
+  width: 100%;
+}
+
+.attraction__address {
+  padding: 0 1rem;
+}
+
+.attraction__description {
+  padding: 0 1rem 1rem 1rem;
+  color: var(--subtle-text-dark-01);
+}
+
+.button--attraction {
+  margin: 0 16px 16px;
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.button--attraction:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/*  ====================
+    Cards & Utilities 
+    ====================
+*/
+.card {
+  border: 1px solid var(--subtle-light);
+  border-radius: 16px;
+  padding: 1.5rem;
 }

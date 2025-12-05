@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuja Chamber of Commerce Discover Page</title>
+    <meta name="author" content="Eghosa Ordia">
+    <meta
+      name="description"
+      content="The Abuja Chamber of Commerce connects local businesses, entrepreneurs, and investors through advocacy, networking, and business support services.">
+    <meta
+      name="keywords"
+      content="Abuja Chamber of Commerce, Abuja business network, Abuja entrepreneurs, trade and investment Abuja, business support Nigeria, Abuja business directory, local business growth, Abuja economy, business events Abuja, networking Abuja">
+    <meta property="og:title" content="Abuja Chamber of Commerce Home Page">
+    <meta
+      property="og:description"
+      content="Empowering businesses across Abuja through advocacy, trade, and innovation.">
+    <meta property="og:image" content="ttp://127.0.0.1:5500/chamber/logo.png">
+    <meta
+      property="og:url"
+      content="http://127.0.0.1:5500/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_NG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="module" src="data/attractions.mjs"></script>
+    <script type="module" defer src="scripts/discover.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <dialog class="modal" id="modal">
+      <div class="modal__heading">
+        <h2 id="tierLevel">Hi there 👋</h2>
+        <button id="closeModal" class="button modal__button">
+          <img
+            src="images/close.svg"
+            alt="modal close icon"
+            class="modal__img"
+         >
+        </button>
+      </div>
+      <div class="modal__body active">
+        <div>
+          <h3>Description</h3>
+          <p>Essential for non-profits and public sector entities</p>
+        </div>
+        <div>
+          <h3>Cost</h3>
+          <p>$0.00</p>
+        </div>
+        <div>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Access to Special events</li>
+            <li>Access to discount advertisement</li>
+            <li>Spotlight positions on home page advertisement</li>
+            <li>Free Training</li>
+          </ul>
+        </div>
+      </div>
+    </dialog>
+
+    <header class="header">
+      <div class="logo">
+        <img
+          src="images/logo.png"
+          alt="abuja chamber of commerce logo"
+          class="logo__img"
+       >
+        <h2>Abuja Chamber of Commerce</h2>
+      </div>
+      <nav id="nav" class="nav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="directory.html" class="nav__link">Directory</a>
+        <a href="#" class="nav__link">Events</a>
+        <a href="join.html" class="nav__link">Membership</a>
+        <a href="discover.html" class="nav__link nav__link--highlight"
+          >About us</a
+        >
+        <a href="#" class="nav__link">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="openModal">
+        <div class="hero__overlay"></div>
+        <div class="hero__text hero__text--center">
+          <h1 class="hero__h1">Discover Abuja: The Heart of Nigeria</h1>
+          <p class="hero__p">
+            Explore Nigeria's center for governance, business, and culture,
+            offering unparalleled opportunities for growth and investment.
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="button hero__cta hero__cta--primary"
+              >Explore Membership Benefits</a
+            >
+            <a href="#events" class="button hero__cta">Explore Attractions</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="card stats__card">
+          <h2 class="stats__heading">Population</h2>
+          <p class="stats__info">3.8M+</p>
+        </div>
+        <div class="card stats__card">
+          <h2 class="stats__heading">Economic Growth</h2>
+          <p class="stats__info">5.2%</p>
+        </div>
+        <div class="card stats__card">
+          <h2 class="stats__heading">Investment (YoY)</h2>
+          <p class="stats__info">+8.1%</p>
+        </div>
+        <div class="card stats__card">
+          <h2 class="stats__heading">Area</h2>
+          <p class="stats__info">1,769KM<sup>2</sup></p>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__content">
+          <h2 class="about__heading">About Abuja: A Planned City</h2>
+          <p>
+            Abuja, Nigeria's capital since 1991, is a masterpiece of modern
+            urban planning. As a planned city, it was built from the ground up
+            to be the heart of the nation's governance and a symbol of unity. It
+            stands today as a testament to strategic development, hosting key
+            federal institutions, international embassies, and a vibrant,
+            growing community.
+          </p>
+
+          <p>
+            Its well-organized infrastructure, lush green spaces, and modern
+            architecture create a unique environment that balances
+            administrative functions with a high quality of life.
+          </p>
+        </div>
+        <div class="about__display">
+          <img src="images/abuja-about.png" alt="" class="about__img">
+        </div>
+      </section>
+
+      <section class="attractions">
+        <h2 class="attractions__heading">Attractions & Landmarks</h2>
+        <p class="attractions__text">
+          From natural wonders to architectural marvels, Abuja is a city of
+          captivating sights.
+        </p>
+
+        <div class="attractions__list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="info-and-links">
+        <p class="footer__copyright">
+          © <span id="currentYear"></span> Abuja Chamber of Commerce. All Rights
+          Reserved.
+        </p>
+        <nav class="footer__links">
+          <a href="#" class="nav__link nav_link--footer">Home</a>
+          <a href="#" class="nav__link nav_link--footer">Directory</a>
+        </nav>
+      </div>
+      <div class="last-modified">
+        Last Modification:
+        <span id="lastModified" class="last-modified"></span>
+      </div>
+    </footer>
+  </body>
+</html>
+<!DOCTYPE html>

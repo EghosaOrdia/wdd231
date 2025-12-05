@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abuja Chamber of Commerce Join Page</title>
-    <meta name="author" content="Eghosa Ordia">
+    <meta name="author" content="Eghosa Ordia" />
     <meta
       name="description"
-      content="The Abuja Chamber of Commerce connects local businesses, entrepreneurs, and investors through advocacy, networking, and business support services.">
+      content="The Abuja Chamber of Commerce connects local businesses, entrepreneurs, and investors through advocacy, networking, and business support services."
+    />
     <meta
       name="keywords"
-      content="Abuja Chamber of Commerce, Abuja business network, Abuja entrepreneurs, trade and investment Abuja, business support Nigeria, Abuja business directory, local business growth, Abuja economy, business events Abuja, networking Abuja">
-    <meta property="og:title" content="Abuja Chamber of Commerce Home Page">
+      content="Abuja Chamber of Commerce, Abuja business network, Abuja entrepreneurs, trade and investment Abuja, business support Nigeria, Abuja business directory, local business growth, Abuja economy, business events Abuja, networking Abuja"
+    />
+    <meta property="og:title" content="Abuja Chamber of Commerce Home Page" />
     <meta
       property="og:description"
-      content="Empowering businesses across Abuja through advocacy, trade, and innovation.">
-    <meta property="og:image" content="ttp://127.0.0.1:5500/chamber/logo.png">
+      content="Empowering businesses across Abuja through advocacy, trade, and innovation."
+    />
+    <meta property="og:image" content="ttp://127.0.0.1:5500/chamber/logo.png" />
     <meta
       property="og:url"
-      content="http://127.0.0.1:5500/chamber/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_NG">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      content="http://127.0.0.1:5500/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_NG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/get-current-timestamp.js"></script>
     <script defer src="scripts/dialog.js"></script>
@@ -44,7 +49,7 @@
             src="images/close.svg"
             alt="modal close icon"
             class="modal__img"
-         >
+          />
         </button>
       </div>
       <div class="modal__body active" data-modal="np">
@@ -136,16 +141,18 @@
           src="images/logo.png"
           alt="abuja chamber of commerce logo"
           class="logo__img"
-       >
+        />
         <h2>Abuja Chamber of Commerce</h2>
       </div>
       <nav id="nav" class="nav">
         <a href="index.html" class="nav__link">Home</a>
         <a href="directory.html" class="nav__link">Directory</a>
         <a href="#" class="nav__link">Events</a>
-        <a href="#" class="nav__link active">Membership</a>
-        <a href="#" class="nav__link">About us</a>
-        <a href="#" class="nav__link nav__link--highlight">Contact</a>
+        <a href="join.html" class="nav__link active nav__link--highlight"
+          >Membership</a
+        >
+        <a href="discover.html" class="nav__link">About us</a>
+        <a href="#" class="nav__link">Contact</a>
       </nav>
       <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
         <span></span>
@@ -180,7 +187,7 @@
                     autocomplete="given-name"
                     class="form__input fname"
                     required
-                 >
+                  />
                 </div>
                 <div class="form-control__meta">
                   <label for="lname" class="form__label">Last Name</label>
@@ -193,7 +200,7 @@
                     autocomplete="family-name"
                     class="form__input fname"
                     required
-                 >
+                  />
                 </div>
               </div>
               <div class="form-control">
@@ -215,7 +222,7 @@
                     minlength="7"
                     pattern="^[A-Za-z\- ]{7,}$"
                     class="form__input fname"
-                 >
+                  />
                 </div>
               </div>
               <div class="form-control--alt">
@@ -230,7 +237,7 @@
                     autocomplete="email"
                     class="form__input email"
                     required
-                 >
+                  />
                 </div>
                 <div class="form-control__meta">
                   <label for="number" class="form__label"
@@ -245,7 +252,7 @@
                     autocomplete="tel"
                     class="form__input number"
                     required
-                 >
+                  />
                 </div>
               </div>
               <div class="form-control">
@@ -261,7 +268,7 @@
                   autocomplete="organization"
                   class="form__input"
                   required
-               >
+                />
               </div>
               <div class="form-control">
                 <label for="mlevel" class="form__label">Membership Level</label>
@@ -285,11 +292,13 @@
                 ></textarea>
               </div>
               <div class="form-control">
-                <button type="submit" class="button form__button">Submit Application</button>
+                <button type="submit" class="button form__button">
+                  Submit Application
+                </button>
               </div>
 
               <div>
-                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="hidden" name="timestamp" id="timestamp" />
               </div>
             </div>
           </form>
@@ -304,7 +313,7 @@
                     src="images/ngo.svg"
                     alt="icon of NP membership level"
                     class="tier__img"
-                 >
+                  />
                 </div>
                 <div class="tier__body">
                   Essential for non-profits and public sector entities
@@ -322,7 +331,7 @@
                     src="images/bronze.svg"
                     alt="icon of bronze membership level"
                     class="tier__img"
-                 >
+                  />
                 </div>
                 <div class="tier__body">
                   Core benefits for small businesses and startups
@@ -340,7 +349,7 @@
                     src="images/silver.svg"
                     alt="icon of silver membership level"
                     class="tier__img"
-                 >
+                  />
                 </div>
                 <div class="tier__body">
                   Enhanced visibility and networking for growing businesses.
@@ -358,7 +367,7 @@
                     src="images/gold.svg"
                     alt="icon of gold membership level"
                     class="tier__img"
-                 >
+                  />
                 </div>
                 <div class="tier__body">
                   Premium access and exclusive opportunities for industry
