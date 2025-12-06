@@ -42,18 +42,170 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo__icon">
-        <img src="images/logo.png" alt="logo of crafts.com" />
+      <a href="index.html" class="logo__link">
+        <img
+          src="images/logo.png"
+          alt="logo of crafts.com"
+          class="logo__image"
+        />
       </a>
 
-      <nav class="nav">
-        <a href="#">Find a pro</a>
-        <a href="#">Become a pro</a>
-        <a href="#">About us</a>
+      <nav id="nav" class="nav">
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link">Find a pro</a></li>
+          <li><a href="#" class="nav__link">Become a pro</a></li>
+          <li><a href="#" class="nav__link">About us</a></li>
+          <li><a href="#" class="nav__link">Login</a></li>
+          <li><a href="#" class="nav__link">Sign Up</a></li>
+        </ul>
 
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
+        <button id="menuToggle" class="button menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1 class="hero__title">The Right Pro for the Job, Guaranteed</h1>
+          <p class="hero__description">
+            Find, verify, and hire top-rated local electricians, plumbers, and
+            more with confidence.
+          </p>
+          <a href="#" class="button button-primary">Hire a professional</a>
+          <a href="#" class="button button-primary hero__cta"
+            >Join as a Professional</a
+          >
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section class="section section-search">
+        <div class="form-control">
+          <img
+            src="images/icons/search.svg"
+            alt="search icon"
+            class="form__icon"
+          />
+          <input
+            type="text"
+            placeholder="Search for a specific trade (e.g Plumber, Electricians)"
+            class="form__input"
+          />
+        </div>
+
+        <div class="categories">
+          <div class="category active">
+            <img
+              src="images/icons/plumbing.svg"
+              alt="plumbing icon"
+              class="category__image"
+            />
+            <span class="category__text">Plumbing</span>
+          </div>
+          <div class="category">
+            <img
+              src="images/icons/electrician.svg"
+              alt="electrical icon"
+              class="category__image"
+            />
+            <span class="category__text">Electrician</span>
+          </div>
+          <div class="category">
+            <img
+              src="images/icons/saw.svg"
+              alt="saw icon"
+              class="category__image"
+            />
+            <span class="category__text">Carpentry</span>
+          </div>
+          <div class="category">
+            <img
+              src="images/icons/painter.svg"
+              alt="paint brush icon"
+              class="category__image"
+            />
+            <span class="category__text">Painting</span>
+          </div>
+          <div class="category">
+            <img
+              src="images/icons/roof.svg"
+              alt="roof icon"
+              class="category__image"
+            />
+            <span class="category__text">Roofing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works section -->
+      <section class="section section-howitworks">
+        <h2 class="section__heading">How It Works</h2>
+        <p class="section__subtext">
+          Finding your perfect professional is simple and transparent. Follow
+          these easy steps to get your project done right.
+        </p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__icon-container">
+              <img
+                src="images/icons/search.svg"
+                alt="search icon"
+                class="step__icon"
+              />
+            </div>
+            <p class="step__title">1. Search & Filter</p>
+            <p class="step__description">
+              Describe your needs and browse through a list of qualified local
+              professionals. Filter by trade, availability, and ratings.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__icon-container">
+              <img
+                src="images/icons/shield-check.svg"
+                alt="shield check"
+                class="step__icon"
+              />
+            </div>
+            <p class="step__title">2. Verify & Compare</p>
+            <p class="step__description">
+              Review detailed profiles, check for verification badges, read
+              authentic reviews, and compare quotes to make an informed
+              decision.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step__icon-container">
+              <img
+                src="images/icons/invoice.svg"
+                alt="invoice"
+                class="step__icon"
+              />
+            </div>
+            <p class="step__title">3. Book & Rate</p>
+            <p class="step__description">
+              Book your chosen pro securely through our platform. Once the job
+              is done, leave a rating to help our community grow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose -->
+      <section class="section section-whychoose">
+        <h2 class="section__heading">Why Choose <b>Crafts</b></h2>
+        <p class="section__subtext">
+          We're committed to providing a platform built on trust, quality, and
+          convenience for everyone.
+        </p>
+      </section>
+    </main>
   </body>
 </html>

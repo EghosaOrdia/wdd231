@@ -23,6 +23,8 @@
 
   /* Font Sizes */
   --text-sm: 0.875rem;
+  --text-lg: 1.125rem;
+  --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
 
   /* Font Weights */
@@ -30,4 +32,31 @@
   --weight-medium: 500;
   --weight-semibold: 600;
   --weight-bold: 700;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: var(--primary-font);
+  transition: all 0.4s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-primary {
+  background-color: var(--color-background);
+  color: #fff;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  padding: 1rem 1rem;
+  border-radius: var(--radius-lg);
 }
