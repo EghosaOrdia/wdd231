@@ -6,7 +6,7 @@
 
 :root {
   /* Typography */
-  --primary-font: Inter, sans-serif;
+  --primary-font: "Open Sans", sans-serif;
 
   /* Color */
   --color-primary: #1e293b;
@@ -26,6 +26,7 @@
   --text-lg: 1.125rem;
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
 
   /* Font Weights */
   --weight-normal: 400;

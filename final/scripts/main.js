@@ -1,5 +1,5 @@
 const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
+const nav = document.getElementById("nav__links");
 // const lastModified = document.getElementById("lastModified");
 
 menuToggle.addEventListener("click", function () {
