@@ -287,6 +287,26 @@ header {
   /* padding: 4rem 1.5rem; */
 }
 
+.continue__options {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.continue__option {
+  display: flex;
+  background-color: var(--color-background-light);
+  border-radius: var(--radius-lg);
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.continue__image {
+  width: 20px;
+}
+
 .section__form {
   text-align: center;
   background-color: #fff;
