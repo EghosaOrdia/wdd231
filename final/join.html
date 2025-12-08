@@ -16,11 +16,11 @@
     />
     <meta
       name="og:image"
-      content="http://www.eghosaordia.github.io/final/index.html"
+      content="http://www.eghosaordia.github.io/final/images/favicon/android-chrome-512x512.png"
     />
     <meta
       name="og:url"
-      content="http://www.eghosaordia.github.io/final/index.html"
+      content="http://www.eghosaordia.github.io/final/join.html"
     />
     <meta name="og:locale" content="en_NG" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,8 +52,9 @@
 
       <nav id="nav" class="nav">
         <ul id="nav__links" class="nav__links">
-          <li><a href="#" class="nav__link">Find a pro</a></li>
-          <li><a href="#" class="nav__link">Become a pro</a></li>
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="explore.html" class="nav__link">Find a pro</a></li>
+          <li><a href="join.html" class="nav__link">Become a pro</a></li>
           <li><a href="#" class="nav__link">About us</a></li>
           <li><a href="#" class="nav__link">Login</a></li>
           <li><a href="#" class="nav__link">Sign Up</a></li>
@@ -67,7 +68,150 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section class="join">
+        <div class="section__info">
+          <h1 class="join__heading">Build your team or build your career</h1>
+          <p class="section__subtext">
+            Join the fastest growing community of skilled professionals and
+            homeowners. Whether you need a job done or a job found, LaborLink
+            connects you instantly.
+          </p>
+          <div>
+            <img
+              src="images/join.png"
+              alt="illustration of joining"
+              class="join__image"
+            />
+            <div class="floating">
+              <h2>Verified Pros</h2>
+              <p>
+                Every professional undergoes a strict background check and skill
+                verification process.
+              </p>
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <img src="images/" alt="" />
+                <span>Secure Payments</span>
+              </li>
+              <li>
+                <img src="" alt="" />
+                <span></span>
+              </li>
+              <li><img src="" alt="" /> <span></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section__form">
+          <form action="#" method="get">
+            <h2>Create your account</h2>
+            <p>Already have an account? <a href="#">Login</a></p>
+            <div class="form__navigate">
+              <button type="button" class="button form__button">
+                I want to hire
+              </button>
+              <button type="button" class="button form__button active">
+                I want to work
+              </button>
+            </div>
+            <div class="form-control form-control--alt join__control">
+              <div>
+                <label for="fname" class="form__label">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  autocomplete="given-name"
+                  placeholder="e.g Jane"
+                  class="form__input"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lname" class="form__label">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  autocomplete="family-name"
+                  placeholder="e.g Doe"
+                  class="form__input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-control join__control">
+              <label for="email" class="form__label">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                autocomplete="email"
+                placeholder="e.g janedoe@email.com"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form-control join__control">
+              <label for="pw" class="form__label">Password</label>
+              <input
+                type="password"
+                id="pw"
+                autocomplete="email"
+                placeholder="Min. 8 characters"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form-control join__control">
+              <label for="zipcode" class="form__label">Zip Code</label>
+              <input
+                type="number"
+                id="zipcode"
+                autocomplete=""
+                placeholder="12345"
+                class="form__input"
+                required
+              />
+              <span class="form__subtext">used to find pros near you</span>
+            </div>
+            <div class="agree">
+              <input type="checkbox" name="agree" id="agree" required />
+              <label for="agree"
+                >I agree to the <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a></label
+              >
+            </div>
+            <div class="form-control join__control">
+              <button type="submit" id="joinButton" class="button join__button">
+                Create Client Account
+              </button>
+            </div>
+            <div class="continute join__control">
+              <p>Or continue with</p>
+              <div class="continue__options">
+                <button class="button continue__option">
+                  <img
+                    src="images/google-logo.png"
+                    alt="google logo"
+                    class="continue__image"
+                  />
+                  Google
+                </button>
+                <button class="button continue__option">
+                  <img
+                    src="images/facebook-logo.png"
+                    alt="facebook logo"
+                    class="continue__image"
+                  />
+                  Facebook
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__sections">

@@ -40,6 +40,20 @@
     flex-direction: column;
   }
 
+  /* Section: Join. Page-Join.html */
+  .join {
+    grid-template-columns: 1fr;
+    padding: 4rem 1.5rem;
+  }
+
+  .section__info {
+    display: none;
+  }
+
+  .form-control--alt {
+    grid-template-columns: 1fr;
+  }
+
   /* 
   =====================
   Footer Styles
@@ -61,6 +75,10 @@
 
   header {
     padding: 1.5rem;
+  }
+
+  .form-control--alt {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -116,6 +134,19 @@
   .categories {
     gap: 2rem;
     row-gap: 0.6rem;
+  }
+
+  /* Section: Join. Page-Join.html */
+  .join {
+    padding: 4rem 6rem;
+  }
+
+  .section__info {
+    display: block;
+  }
+
+  .form-control--alt {
+    grid-template-columns: 1fr 1fr;
   }
 
   /* 

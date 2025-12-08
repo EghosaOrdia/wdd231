@@ -148,28 +148,9 @@ header {
   z-index: 20;
 }
 
-.form-control {
-  display: flex;
-  background-color: var(--color-background-muted);
-  padding: 0 0.5rem;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
 .form__icon {
   float: left;
   width: 20px;
-}
-
-.form__input {
-  flex: 1;
-  padding: 1rem 1rem;
-  background-color: transparent;
-  border: none;
-}
-
-.form__input:focus {
-  outline: none;
 }
 
 .categories {
@@ -297,7 +278,104 @@ header {
   margin: 0;
 }
 
-/*  */
+/* Section: Join. Page-Join.html */
+.join {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  padding: 4rem 6rem;
+  /* padding: 4rem 1.5rem; */
+}
+
+.section__form {
+  text-align: center;
+  background-color: #fff;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+}
+
+.form__navigate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-background-muted);
+  border-radius: var(--radius-lg);
+  padding: 0.4rem;
+  margin-top: 2rem;
+}
+
+.form__button {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: var(--weight-semibold);
+  border-radius: var(--radius-lg);
+}
+
+.form__button.active {
+  background-color: #fff;
+  color: var(--color-background);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+  overflow: hidden;
+  margin-top: 1.4rem;
+}
+
+.form__subtext {
+  font-size: 0.8rem;
+  color: var(--color-text-foreground);
+}
+
+.form-control--alt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+  }
+}
+
+.form__label {
+  font-size: 0.9rem;
+  font-weight: var(--weight-semibold);
+}
+
+.form__input {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-foreground);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.agree {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+  text-align: left;
+}
+
+.join__button {
+  background-color: var(--color-background);
+  color: #fff;
+  border-radius: var(--radius-xl);
+  padding: 1rem 1rem;
+  font-weight: var(--weight-semibold);
+}
 
 /* 
   =====================
