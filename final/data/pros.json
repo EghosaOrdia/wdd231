@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Christian Bale",
+    "job": "Plumber",
+    "path": "christian.jpg",
+    "rating": 4.9,
+    "reviews": 149,
+    "location": "New York, NY"
+  },
+
+  {
+    "name": "Engelsen Vitalik",
+    "job": "Electrician",
+    "path": "engelsen.jpg",
+    "rating": 4.7,
+    "reviews": 98,
+    "location": "Los Angeles, CA"
+  },
+  {
+    " name": "Jack Ripper",
+    "job": "Carpenter",
+    "path": "jack.jpg",
+    "ating": 4.8,
+    "reviews": 122,
+    "location": "Houston, TX"
+  },
+  {
+    "name": "Joseph Mikealson",
+    "job": "HVAC Technician",
+    "path": "joseph.jpg",
+    "rating": 4.6,
+    "reviews": 87,
+    "location": "Chicago, IL"
+  },
+  {
+    "name": "Luis Linguini",
+    "job": "Auto Mechanic",
+    "path": "luis.jpg",
+    "rating": 4.9,
+    "reviews": 204,
+    "location": "Miami, FL"
+  },
+  {
+    "name": "Tom Carter",
+    "job": "Painter",
+    "path": "tom.jpg",
+    "rating": 4.5,
+    "reviews": 76,
+    "location": "Phoenix, AZ"
+  },
+  {
+    "name": "Vince Alex",
+    "job": "Roofer",
+    "path": "vince.jpg",
+    "rating": 4.7,
+    "reviews": 113,
+    "location": "Denver, CO"
+  },
+  {
+    "name": "Marcus Aurelius",
+    "job": "Locksmith",
+    "path": "marcus.jpg",
+    "rating": 4.8,
+    "reviews": 131,
+    "location": "Seattle, WA"
+  }
+]

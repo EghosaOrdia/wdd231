@@ -26,7 +26,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/last-modified.js"></script>
+    <script defer src="scripts/dialog.js"></script>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link
@@ -35,6 +35,20 @@
       type="image/x-icon">
   </head>
   <body>
+    <dialog class="modal" id="modal">
+      <div class="modal__heading">
+        <h2 id="tierLevel">Hi there 👋</h2>
+        <button id="closeModal" class="button modal__button">
+          <img
+            src="images/close.svg"
+            alt="modal close icon"
+            class="modal__img"
+         >
+        </button>
+      </div>
+      <div class="modal__body active"></div>
+    </dialog>
+
     <header>
       <a href="index.html" class="logo__link">
         <img

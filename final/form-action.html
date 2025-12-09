@@ -7,17 +7,17 @@
     <meta name="author" content="Eghosa Ordia">
     <meta
       name="description"
-      content="Crafts Home page for a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals">
+      content="Crafts Form action page for a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals">
     <meta name="og:title" content="Eghosa Ordia">
     <meta
       name="og:description"
-      content="Crafts Home page for a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals">
+      content="Crafts Form action page for a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals">
     <meta
       name="og:image"
-      content="http://www.eghosaordia.github.io/final/explore.html">
+      content="http://www.eghosaordia.github.io/final/images/favicon/android-chrome-512x512.png">
     <meta
       name="og:url"
-      content="http://www.eghosaordia.github.io/final/images/favicon/android-chrome-512x512.png">
+      content="http://www.eghosaordia.github.io/final/form-action.html">
     <meta name="og:locale" content="en_NG">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,15 +26,12 @@
       rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/create-pro-cards.js"></script>
-    <script defer src="scripts/last-modified.js"></script>
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link
       rel="shortcut icon"
       href="images/favicon/favicon.ico"
-      type="image/x-icon"
-   >
+      type="image/x-icon">
   </head>
   <body>
     <header>
@@ -49,9 +46,7 @@
       <nav id="nav" class="nav">
         <ul id="nav__links" class="nav__links">
           <li><a href="index.html" class="nav__link">Home</a></li>
-          <li>
-            <a href="explore.html" class="nav__link active">Find a pro</a>
-          </li>
+          <li><a href="explore.html" class="nav__link">Find a pro</a></li>
           <li><a href="join.html" class="nav__link">Become a pro</a></li>
           <li><a href="#" class="nav__link">About us</a></li>
           <li><a href="#" class="nav__link">Login</a></li>
@@ -59,57 +54,49 @@
         </ul>
 
         <button id="menuToggle" class="button menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </nav>
     </header>
 
     <main>
       <section class="section-explore">
-        <h1 class="explore__header">Browse Professionals</h1>
-        <p class="explore__subtext section__subtext">
-          Search for verified carpenters, electricians, painters, plumbers, and
-          more in your area
-        </p>
+        <h1 class="explore__header">Account Details Submitted</h1>
+        <p class="explore__subtext">Below is the information you entered.</p>
 
-        <div class="explore__main">
-          <div class="explore">
-            <div class="explore__card">
-              <div class="card__heading">
-                <img
-                  src="images/user/christian.jpg"
-                  alt="profile image of christian"
-                  class="explore__image"
-               >
-                <div class="explore__info">
-                  <h2 class="exlore__pro">James Wilson</h2>
-                  <p class="explore__job section__subtext">Plumber</p>
-                </div>
-                <div class="explore__verified">
-                  <img
-                    src="images/icons/verified-check--green.svg"
-                    alt="verified check"
-                    class="category__image"
-                 >
-                  verified
-                </div>
-              </div>
-              <div class="card__body">
-                <div class="card__rating-and-review">
-                  <span class="star"></span>
-                  <span class="rating">4.9</span>
-                  <span class="reviews section__subtext">(142 reviews)</span>
-                  <div class="card__location section__subtext">
-                    New York, NY
-                  </div>
-                </div>
-              </div>
-              <div class="card__footer">
-                <div class="button explore__button">View Profile</div>
-              </div>
-            </div>
+        <div
+          class="explore__card"
+          style="max-width: 600px; margin-top: 2rem; padding: 2rem"
+        >
+          <h2 style="margin-top: 0">Profile Information</h2>
+
+          <div class="form-control">
+            <label class="form__label">First Name</label>
+            <p id="out-fname" class="section__subtext"></p>
+          </div>
+
+          <div class="form-control">
+            <label class="form__label">Last Name</label>
+            <p id="out-lname" class="section__subtext"></p>
+          </div>
+
+          <div class="form-control">
+            <label class="form__label">Email</label>
+            <p id="out-email" class="section__subtext"></p>
+          </div>
+
+          <div class="form-control">
+            <label class="form__label">Zip Code</label>
+            <p id="out-zipcode" class="section__subtext"></p>
+          </div>
+
+          <div class="form-control">
+            <label class="form__label">Agreed to Terms</label>
+            <p id="out-agree" class="section__subtext"></p>
+          </div>
+
+          <div class="card__footer">
+            <a href="join.html" class="button explore__button">Back</a>
           </div>
         </div>
       </section>
@@ -149,7 +136,28 @@
           </ul>
         </div>
       </div>
+
       <div class="rights">&copy; 2024 Crafts. All rights reserved.</div>
     </footer>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      document.getElementById("out-fname").textContent =
+        params.get("fname") || "—";
+
+      document.getElementById("out-lname").textContent =
+        params.get("lname") || "—";
+
+      document.getElementById("out-email").textContent =
+        params.get("email") || "—";
+
+      document.getElementById("out-zipcode").textContent =
+        params.get("zipcode") || "—";
+
+      document.getElementById("out-agree").textContent = params.get("agree")
+        ? "Yes"
+        : "No";
+    </script>
   </body>
 </html>

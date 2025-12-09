@@ -54,6 +54,14 @@
     grid-template-columns: 1fr;
   }
 
+  .section-explore {
+    padding: 2rem 1.5rem;
+  }
+
+  .explore {
+    grid-template-columns: 1fr;
+  }
+
   /* 
   =====================
   Footer Styles
@@ -149,6 +157,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .explore {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-explore {
+    padding: 2rem 6rem;
+  }
   /* 
   =====================
   Footer Styles

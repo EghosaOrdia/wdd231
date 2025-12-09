@@ -8,3 +8,11 @@ menuToggle.addEventListener("click", function () {
 });
 
 // lastModified.textContent = document.lastModified;
+const acctTypeButtons = document.querySelectorAll(".form__button");
+
+acctTypeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    acctTypeButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});

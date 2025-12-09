@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crafts</title>
-    <meta name="author" content="Eghosa Ordia" />
+    <meta name="author" content="Eghosa Ordia">
     <meta
       name="description"
-      content="Crafts Home page for a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals"
-    />
-    <meta name="og:title" content="Eghosa Ordia" />
+      content="Crafts Join page to register for crafts.com, a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals">
+    <meta name="og:title" content="Eghosa Ordia">
     <meta
       name="og:description"
-      content="Crafts Home page for a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals"
-    />
+      content="Crafts Join page to register for crafts.com, a streamlined hiring platform where users can locate, verify, and hire skilled manual labor professionals">
     <meta
       name="og:image"
-      content="http://www.eghosaordia.github.io/final/images/favicon/android-chrome-512x512.png"
-    />
+      content="http://www.eghosaordia.github.io/final/images/favicon/android-chrome-512x512.png">
     <meta
       name="og:url"
-      content="http://www.eghosaordia.github.io/final/join.html"
-    />
-    <meta name="og:locale" content="en_NG" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      content="http://www.eghosaordia.github.io/final/join.html">
+    <meta name="og:locale" content="en_NG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/last-modified.js"></script>
-    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link
       rel="shortcut icon"
       href="images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
+      type="image/x-icon">
   </head>
   <body>
     <header>
@@ -47,14 +41,14 @@
           src="images/logo.png"
           alt="logo of crafts.com"
           class="logo__image"
-        />
+       >
       </a>
 
       <nav id="nav" class="nav">
         <ul id="nav__links" class="nav__links">
           <li><a href="index.html" class="nav__link">Home</a></li>
           <li><a href="explore.html" class="nav__link">Find a pro</a></li>
-          <li><a href="join.html" class="nav__link">Become a pro</a></li>
+          <li><a href="join.html" class="nav__link active">Become a pro</a></li>
           <li><a href="#" class="nav__link">About us</a></li>
           <li><a href="#" class="nav__link">Login</a></li>
           <li><a href="#" class="nav__link">Sign Up</a></li>
@@ -82,7 +76,7 @@
               src="images/join.png"
               alt="illustration of joining"
               class="join__image"
-            />
+           >
             <div class="floating">
               <h2>Verified Pros</h2>
               <p>
@@ -91,22 +85,9 @@
               </p>
             </div>
           </div>
-          <div>
-            <ul>
-              <li>
-                <img src="images/" alt="" />
-                <span>Secure Payments</span>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <span></span>
-              </li>
-              <li><img src="" alt="" /> <span></span></li>
-            </ul>
-          </div>
         </div>
         <div class="section__form">
-          <form action="#" method="get">
+          <form action="form-action.html" method="get">
             <h2>Create your account</h2>
             <p>Already have an account? <a href="#">Login</a></p>
             <div class="form__navigate">
@@ -117,69 +98,75 @@
                 I want to work
               </button>
             </div>
-            <div class="form-control form-control--alt join__control">
+            <div class="form-control--alt join__control">
               <div>
                 <label for="fname" class="form__label">First Name</label>
                 <input
                   type="text"
+                  name="fname"
                   id="fname"
                   autocomplete="given-name"
                   placeholder="e.g Jane"
                   class="form__input"
                   required
-                />
+               >
               </div>
               <div>
                 <label for="lname" class="form__label">Last Name</label>
                 <input
                   type="text"
+                  name="lname"
                   id="lname"
                   autocomplete="family-name"
                   placeholder="e.g Doe"
                   class="form__input"
                   required
-                />
+               >
               </div>
             </div>
             <div class="form-control join__control">
               <label for="email" class="form__label">Email Address</label>
               <input
                 type="email"
+                name="email"
                 id="email"
                 autocomplete="email"
                 placeholder="e.g janedoe@email.com"
                 class="form__input"
                 required
-              />
+             >
             </div>
             <div class="form-control join__control">
               <label for="pw" class="form__label">Password</label>
               <input
                 type="password"
+                name="password"
                 id="pw"
                 autocomplete="email"
                 placeholder="Min. 8 characters"
                 class="form__input"
                 required
-              />
+             >
             </div>
             <div class="form-control join__control">
               <label for="zipcode" class="form__label">Zip Code</label>
               <input
                 type="number"
+                name="zipcode"
                 id="zipcode"
                 autocomplete=""
                 placeholder="12345"
                 class="form__input"
                 required
-              />
+             >
               <span class="form__subtext">used to find pros near you</span>
             </div>
             <div class="agree">
-              <input type="checkbox" name="agree" id="agree" required />
+              <input type="checkbox" name="agree" id="agree" required>
               <label for="agree"
-                >I agree to the <a href="#">Terms of Service</a> and
-                <a href="#">Privacy Policy</a></label
+                >I agree to the
+                <a href="#" class="agree__link">Terms of Service</a> and
+                <a href="#" class="agree__link">Privacy Policy</a></label
               >
             </div>
             <div class="form-control join__control">
@@ -195,7 +182,7 @@
                     src="images/icons/google.svg"
                     alt="google logo"
                     class="continue__image"
-                  />
+                 >
                   Google
                 </button>
                 <button class="button continue__option">
@@ -203,7 +190,7 @@
                     src="images/icons/apple.svg"
                     alt="facebook logo"
                     class="continue__image"
-                  />
+                 >
                   Facebook
                 </button>
               </div>
