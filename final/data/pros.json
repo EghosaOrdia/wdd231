@@ -2,7 +2,7 @@
   {
     "name": "Christian Bale",
     "job": "Plumber",
-    "path": "christian.jpg",
+    "path": "christian.webp",
     "rating": 4.9,
     "reviews": 149,
     "location": "New York, NY"
@@ -11,23 +11,23 @@
   {
     "name": "Engelsen Vitalik",
     "job": "Electrician",
-    "path": "engelsen.jpg",
+    "path": "engelsen.webp",
     "rating": 4.7,
     "reviews": 98,
     "location": "Los Angeles, CA"
   },
   {
-    " name": "Jack Ripper",
+    "name": "Jack Ripper",
     "job": "Carpenter",
-    "path": "jack.jpg",
-    "ating": 4.8,
+    "path": "jack.webp",
+    "rating": 4.8,
     "reviews": 122,
     "location": "Houston, TX"
   },
   {
     "name": "Joseph Mikealson",
     "job": "HVAC Technician",
-    "path": "joseph.jpg",
+    "path": "joseph.webp",
     "rating": 4.6,
     "reviews": 87,
     "location": "Chicago, IL"
@@ -57,11 +57,75 @@
     "location": "Denver, CO"
   },
   {
-    "name": "Marcus Aurelius",
+    "name": "Taras Smith",
     "job": "Locksmith",
-    "path": "marcus.jpg",
+    "path": "taras.jpg",
     "rating": 4.8,
     "reviews": 131,
     "location": "Seattle, WA"
+  },
+  {
+    "name": "Aatik Rana",
+    "job": "Software Engineer",
+    "path": "aatik.webp",
+    "rating": 4.7,
+    "reviews": 89,
+    "location": "Toronto, Canada"
+  },
+  {
+    "name": "Artem Volkov",
+    "job": "Electrician",
+    "path": "artem.webp",
+    "rating": 4.6,
+    "reviews": 112,
+    "location": "Warsaw, Poland"
+  },
+  {
+    "name": "Etortoma Mensah",
+    "job": "Welder",
+    "path": "etoroma.jpg",
+    "rating": 4.5,
+    "reviews": 73,
+    "location": "Accra, Ghana"
+  },
+  {
+    "name": "Leio Dumont",
+    "job": "Plumber",
+    "path": "leio.jpg",
+    "rating": 4.8,
+    "reviews": 140,
+    "location": "Paris, France"
+  },
+  {
+    "name": "Stefan Adeyemi",
+    "job": "Architect",
+    "path": "stefan.jpg",
+    "rating": 4.9,
+    "reviews": 164,
+    "location": "Lagos, Nigeria"
+  },
+  {
+    "name": "Venrick Hale",
+    "job": "Carpenter",
+    "path": "venrick.jpg",
+    "rating": 4.7,
+    "reviews": 101,
+    "location": "Austin, TX"
+  },
+  {
+    "name": "Amy Vancouver",
+    "job": "Piano Teacher",
+    "path": "amy.webp",
+    "rating": 4.9,
+    "reviews": 258,
+    "location": "Houston, TX"
+  },
+  {
+    "name": "Mika Antoine",
+    "job": "Fitness Instructor",
+    "path": "mika.jpg",
+    "rating": 4.4,
+    "reviews": 108,
+    "location": "Phoenix, AZ"
   }
 ]
